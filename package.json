@@ -1,0 +1,15 @@
+{
+  "name": "lingostacks",
+  "version": "1.0.0",
+  "description": "language learning app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.3"
+  }
+}
