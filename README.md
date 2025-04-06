@@ -15,6 +15,7 @@ How to run:
 Dependencies
 - express
 - pug
+- pug-cli
 
 Links:
 - GitHub Repository: [https://github.com/iusevim/LingoStacks](https://github.com/iusevim/LingoStacks)
