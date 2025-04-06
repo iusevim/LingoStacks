@@ -21,28 +21,28 @@ Links:
 - Hosted App: []()
 
 Project Structure:
-/web-application-root
-app.js
-package.json
-.gitignore
-/public
-/images
-/javascripts
-/styles
-style.css
-/routes
-index.js 
-users/
+/LingoSTacks
+    /.idea
+        .gitignore
+        LingoStacks.iml
+        modules.xml
+        vcs.xml
+        workspace.xml
     index.js
-/views
-index.pug layout.pug
-/controllers
-index.js 
-users/
-    index.js
-/services
-index.js 
-users/
-    index.js
-
+    package.json
+    package-lock.json
+    README.md
+    .gitignore
+    /public
+        /styles
+            styles.css
+    /routes
+        index.js 
+        flashcards.js
+    /views
+        index.pug 
+        layout.pug 
+        flashcards.pug
+    /controllers
+        flashcardController.js
 
