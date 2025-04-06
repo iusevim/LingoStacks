@@ -21,28 +21,5 @@ Links:
 - Hosted App: []()
 
 Project Structure:
-/LingoSTacks
-    /.idea
-        .gitignore
-        LingoStacks.iml
-        modules.xml
-        vcs.xml
-        workspace.xml
-    index.js
-    package.json
-    package-lock.json
-    README.md
-    .gitignore
-    /public
-        /styles
-            styles.css
-    /routes
-        index.js 
-        flashcards.js
-    /views
-        index.pug 
-        layout.pug 
-        flashcards.pug
-    /controllers
-        flashcardController.js
 
+/LingoSTacks ├── .idea │ ├── .gitignore │ ├── LingoStacks.iml │ ├── modules.xml │ ├── vcs.xml │ └── workspace.xml ├── index.js ├── package.json ├── package-lock.json ├── README.md ├── .gitignore ├── /public │ └── /styles │ └── styles.css ├── /routes │ ├── index.js │ └── flashcards.js ├── /views │ ├── index.pug │ ├── layout.pug │ └── flashcards.pug └── /controllers └── flashcardController.js
