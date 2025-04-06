@@ -2,48 +2,56 @@ include layout
 
 block content
     if formType === 'new'
-        h1 Create New Flashcard
-        form(action="/flashcards", method="POST")
-            label(for="word") Word:
-            input(type="text", name="word", id="word", required)
-            br
-            label(for="translation") Translation:
-            input(type="text", name="translation", id="translation", required)
-            br
-            label(for="example") Example Sentence:
-            textarea(name="example", id="example")
-            br
-            label(for="topic") Topic:
-            input(type="text", name="topic", id="topic")
-            br
-            button(type="submit") Submit
+        main
+            h1 Create New Flashcard
+            div.form-container
+                form(action="/flashcards", method="POST")
+                    label(for="word") Word:
+                    input(type="text", name="word", id="word", required)
+                    br
+                    label(for="translation") Translation:
+                    input(type="text", name="translation", id="translation", required)
+                    br
+                    label(for="example") Example Sentence:
+                    textarea(name="example", id="example")
+                    br
+                    label(for="topic") Topic:
+                    input(type="text", name="topic", id="topic")
+                    br
+                    button(type="submit") Submit
     else if formType === 'edit'
-        h1 Edit Flashcard
-        form(action=`/flashcards/${card.id}`, method="POST")
-            label(for="word") Word:
-            input(type="text", name="word", id="word", value=card.word, required)
-            br
-            label(for="translation") Translation:
-            input(type="text", name="translation", id="translation", value=card.translation, required)
-            br
-            label(for="example") Example Sentence:
-            textarea(name="example", id="example")= card.example
-            br
-            label(for="topic") Topic:
-            input(type="text", name="topic", id="topic", value=card.topic)
-            br
-            button(type="submit") Update
+        main
+            h1 Edit Flashcard
+            div.form-container
+                form(action=`/flashcards/${card.id}`, method="POST")
+                    label.label-edit(for="word") Word:
+                    input(type="text", name="word", id="word", value=card.word, required)
+                    br
+                    label.label-edit(for="translation") Translation:
+                    input(type="text", name="translation", id="translation", value=card.translation, required)
+                    br
+                    label.label-edit(for="example") Example Sentence:
+                    textarea(name="example", id="example")= card.example
+                    br
+                    label.label-edit(for="topic") Topic:
+                    input(type="text", name="topic", id="topic", value=card.topic)
+                    br
+                    button(type="submit") Update
     else
-        h1 Flashcards
-        each card in flashcards
-            div
-                h2= card.word
-                p Translation: #{card.translation}
-                if card.example
-                    p Example: #{card.example}
-                if card.topic
-                    p Topic: #{card.topic}
-                a(href=`/flashcards/${card.id}/edit`) Edit
-                form(action=`/flashcards/${card.id}/delete`, method="POST", style="display:inline")
-                    button(type="submit") Delete
-        a(href="/flashcards/new") Create New Flashcard
+        main
+            h1 Flashcards
+            div.flashcard-grid
+                each card in flashcards
+                    div.flashcard
+                        h2= card.word
+                        p Translation: #{card.translation}
+                        if card.example
+                            p Example: #{card.example}
+                        if card.topic
+                            p Topic: #{card.topic}
+                        a(href=`/flashcards/${card.id}/edit`)
+                            button Edit
+                        form(action=`/flashcards/${card.id}/delete`, method="POST", style="display:inline")
+                            button(type="submit") Delete
+            a(href="/flashcards/new")
+                button Create New Flashcard

@@ -43,3 +43,5 @@ exports.deleteFlashcard = (req, res) => {
     flashcards = flashcards.filter(c => c.id != req.params.id);
     res.redirect('/flashcards');
 };
+
+
