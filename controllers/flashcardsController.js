@@ -1,5 +1,4 @@
-// controllers/flashcardsController.javascripts
-let flashcards = []; // In-memory storage for demonstration
+let flashcards = [];
 let nextId = 1;
 
 exports.listFlashcards = (req, res) => {
@@ -12,7 +11,6 @@ exports.showNewForm = (req, res) => {
 
 exports.createFlashcard = (req, res) => {
     const { word, translation, example, topic } = req.body;
-    // Basic validation: word and translation are required
     if (!word || !translation) {
         return res.status(400).send('Word and Translation are required.');
     }
