@@ -1,5 +1,5 @@
 This web application allows users to create, read, update, and delete flashcards for vocabulary practice. It was developed using Express.js and Pug as part of the Web Technologies module coursework.
-
+The UI was inspired by Duolingo language learning platform and uses the same colors and font of the platform.
 How to run:
 1. Clone the repository:  
    `git clone https://github.com/iusevim/LingoStacks.git`
