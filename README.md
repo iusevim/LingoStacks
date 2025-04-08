@@ -19,7 +19,7 @@ Dependencies
 
 Links:
 - GitHub Repository: [https://github.com/iusevim/LingoStacks](https://github.com/iusevim/LingoStacks)
-- Hosted App: []()
+- Hosted App: [https://lingostacks.onrender.com](https://lingostacks.onrender.com)
 
 Project Structure:
 
