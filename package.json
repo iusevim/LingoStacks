@@ -4,7 +4,6 @@
   "description": "language learning app",
   "main": "index.js",
   "scripts": {
-    "build": "pug views -o dist"
   },
   "private": true,
   "author": "",
