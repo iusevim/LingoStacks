@@ -41,7 +41,7 @@ block content
         main
             h1 Flashcards
             div.flashcard-grid
-                each card in flashcards | []
+                each card in flashcards || []
                     div.flashcard
                         h2= card.word
                         p Translation: #{card.translation}
