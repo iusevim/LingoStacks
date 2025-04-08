@@ -4,9 +4,9 @@ How to run:
 1. Clone the repository:  
    `git clone https://github.com/iusevim/LingoStacks.git`
 2. Go to directory:  
-   `cd language-learning-app`
+   `cd LingoStacks`
 3. Install the dependencies:  
-   `npm install`
+   `npm install pug express`
 4. Run the main script:  
    `node index.js`
 5. Open your browser and visit:  
@@ -15,7 +15,6 @@ How to run:
 Dependencies
 - express
 - pug
-- pug-cli
 
 Links:
 - GitHub Repository: [https://github.com/iusevim/LingoStacks](https://github.com/iusevim/LingoStacks)
